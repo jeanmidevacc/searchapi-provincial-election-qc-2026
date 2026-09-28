@@ -42,7 +42,7 @@ for extra in queries:
 ## google_rank_tracking
 
 Top-100 organic SERP results (position, domain, link, title, snippet) for a query.
-Docs: <https://www.searchapi.io/docs/google-rank-tracking>
+Docs: <https://www.searchapi.io/docs/google-rank-tracking-api>
 
 ```python
 import os
@@ -75,7 +75,7 @@ for extra in queries:
 ## google_trends_trending_now
 
 Not query-based: one call for a geo returns every currently-trending topic there.
-Docs: <https://www.searchapi.io/docs/google-trends-trending-now>
+Docs: <https://www.searchapi.io/docs/google-trends-trending-now-api>
 
 ```python
 import os
@@ -129,7 +129,7 @@ for extra in queries:
 ## chatgpt
 
 Sends a prompt to ChatGPT (with live web search) and returns its answer.
-Docs: <https://www.searchapi.io/docs/chatgpt>
+Docs: <https://www.searchapi.io/docs/chatgpt-api>
 
 ```python
 import os
@@ -155,7 +155,7 @@ for prompt in prompts:
 ## gemini
 
 Sends a prompt to Gemini and returns its answer.
-Docs: <https://www.searchapi.io/docs/gemini>
+Docs: <https://www.searchapi.io/docs/gemini-api>
 
 ```python
 import os

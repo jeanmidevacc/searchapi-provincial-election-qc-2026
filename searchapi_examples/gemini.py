@@ -1,4 +1,4 @@
-# gemini engine — https://www.searchapi.io/docs/gemini
+# gemini engine — https://www.searchapi.io/docs/gemini-api
 # Sends a prompt to Gemini and returns its answer.
 
 # Requires SEARCHAPI_API_KEY set in the environment:

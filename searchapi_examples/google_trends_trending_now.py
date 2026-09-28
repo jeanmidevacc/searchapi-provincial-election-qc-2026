@@ -1,4 +1,4 @@
-# google_trends_trending_now engine — https://www.searchapi.io/docs/google-trends-trending-now
+# google_trends_trending_now engine — https://www.searchapi.io/docs/google-trends-trending-now-api
 # Not query-based: one call for a geo returns every currently-trending topic there.
 
 # Requires SEARCHAPI_API_KEY set in the environment:

@@ -1,0 +1,22 @@
+# import_from_kaggle.py
+kaggle
+
+# searchapi_examples/
+requests
+
+# build_html_report.py
+briefing
+pandas
+pyarrow
+numpy
+matplotlib
+plotly
+scikit-learn
+tldextract>=5.3
+markdown-it-py
+
+# chatgpt_embeddings.py -- on a CPU-only machine, install torch first with
+# `pip install torch --index-url https://download.pytorch.org/whl/cpu`
+# to skip the multi-GB CUDA build
+sentence-transformers
+torch

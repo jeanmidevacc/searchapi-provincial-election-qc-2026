@@ -29,9 +29,16 @@ def main() -> int:
     if shutil.which("kaggle") is None:
         sys.exit("The `kaggle` CLI isn't installed -- run `pip install kaggle` first.")
 
+    if args.out.exists() and any(args.out.iterdir()):
+        if not args.force:
+            sys.exit(f"{args.out} already has files -- pass --force to re-download and overwrite them.")
+        # wipe first, not just overwrite-on-conflict: the dataset's own folder
+        # layout can change between versions (e.g. a table renamed or moved
+        # into a new subfolder) and `kaggle ... -o` only overwrites files that
+        # still exist in the new version, leaving stale ones from the old
+        # layout behind otherwise.
+        shutil.rmtree(args.out)
     args.out.mkdir(parents=True, exist_ok=True)
-    if any(args.out.iterdir()) and not args.force:
-        sys.exit(f"{args.out} already has files -- pass --force to re-download and overwrite them.")
 
     print(f"Downloading {DATASET} -> {args.out}")
     result = subprocess.run(
@@ -45,8 +52,9 @@ def main() -> int:
                       "(kaggle.com -> Account -> Settings -> Create New Token). Full error:\n" + result.stderr)
         sys.exit(f"kaggle CLI failed:\n{result.stderr}")
 
-    csvs = sorted(args.out.glob("*.csv"))
-    print(f"Done: {len(csvs)} tables downloaded to {args.out}. Read DATA_DICTIONARY.md there first.")
+    csvs = sorted(args.out.rglob("*.csv"))
+    print(f"Done: {len(csvs)} tables downloaded to {args.out} "
+          f"(searchapi/ + dgeq/ subfolders). Read searchapi/DATA_DICTIONARY.md there first.")
     return 0
 
 

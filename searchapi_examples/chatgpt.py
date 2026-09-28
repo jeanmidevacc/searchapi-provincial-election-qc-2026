@@ -1,4 +1,4 @@
-# chatgpt engine — https://www.searchapi.io/docs/chatgpt
+# chatgpt engine — https://www.searchapi.io/docs/chatgpt-api
 # Sends a prompt to ChatGPT (with live web search) and returns its answer.
 
 # Requires SEARCHAPI_API_KEY set in the environment:

@@ -1,4 +1,4 @@
-# google_rank_tracking engine — https://www.searchapi.io/docs/google-rank-tracking
+# google_rank_tracking engine — https://www.searchapi.io/docs/google-rank-tracking-api
 # Top-100 organic SERP results for a query.
 
 # Requires SEARCHAPI_API_KEY set in the environment:
