@@ -15,7 +15,7 @@ export SEARCHAPI_API_KEY=xxxxxxxxxxxxxxxx
 ## google_news
 
 News results for a search query, scoped by language / country / location.
-Docs: <https://www.searchapi.io/docs/google-news>
+Docs: <https://www.searchapi.io/docs/google-news?utm_source=Dev&utm_medium=Ambassador&utm_campaign=the-odd-dataguy.com>
 
 ```python
 import os
@@ -42,7 +42,7 @@ for extra in queries:
 ## google_rank_tracking
 
 Top-100 organic SERP results (position, domain, link, title, snippet) for a query.
-Docs: <https://www.searchapi.io/docs/google-rank-tracking-api>
+Docs: <https://www.searchapi.io/docs/google-rank-tracking-api?utm_source=Dev&utm_medium=Ambassador&utm_campaign=the-odd-dataguy.com>
 
 ```python
 import os
@@ -75,7 +75,7 @@ for extra in queries:
 ## google_trends_trending_now
 
 Not query-based: one call for a geo returns every currently-trending topic there.
-Docs: <https://www.searchapi.io/docs/google-trends-trending-now-api>
+Docs: <https://www.searchapi.io/docs/google-trends-trending-now-api?utm_source=Dev&utm_medium=Ambassador&utm_campaign=the-odd-dataguy.com>
 
 ```python
 import os
@@ -96,7 +96,7 @@ for time in ("past_24_hours", "past_7_days"):
 
 Same engine, four `data_type` modes. Values are relative indices, re-based per
 request — only comparable within one comma-joined `q`, never across separate calls.
-Docs: <https://www.searchapi.io/docs/google-trends>
+Docs: <https://www.searchapi.io/docs/google-trends?utm_source=Dev&utm_medium=Ambassador&utm_campaign=the-odd-dataguy.com>
 
 ```python
 import os
@@ -129,7 +129,7 @@ for extra in queries:
 ## chatgpt
 
 Sends a prompt to ChatGPT (with live web search) and returns its answer.
-Docs: <https://www.searchapi.io/docs/chatgpt-api>
+Docs: <https://www.searchapi.io/docs/chatgpt-api?utm_source=Dev&utm_medium=Ambassador&utm_campaign=the-odd-dataguy.com>
 
 ```python
 import os
@@ -155,7 +155,7 @@ for prompt in prompts:
 ## gemini
 
 Sends a prompt to Gemini and returns its answer.
-Docs: <https://www.searchapi.io/docs/gemini-api>
+Docs: <https://www.searchapi.io/docs/gemini-api?utm_source=Dev&utm_medium=Ambassador&utm_campaign=the-odd-dataguy.com>
 
 ```python
 import os
